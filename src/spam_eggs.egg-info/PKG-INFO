@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: spam-eggs
+Version: 2020.0.0
+Summary: Lovely Spam! Wonderful Spam!
+Author-email: Andrea Combette <pradyun@example.com>
+Maintainer-email: Andrea Combette <brett@example.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Bug Tracker, https://github.com/me/spam/issues
+Project-URL: Changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: colour>=0.1.5
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: Pillow>=9.4.0
+Requires-Dist: Pillow>=10.2.0
+Requires-Dist: scikit_learn>=1.3.0
+Requires-Dist: setuptools>=68.0.0
+Requires-Dist: tqdm>=4.64.0

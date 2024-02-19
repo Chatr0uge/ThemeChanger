@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+src/main.py
+src/spam_eggs.egg-info/PKG-INFO
+src/spam_eggs.egg-info/SOURCES.txt
+src/spam_eggs.egg-info/dependency_links.txt
+src/spam_eggs.egg-info/entry_points.txt
+src/spam_eggs.egg-info/requires.txt
+src/spam_eggs.egg-info/top_level.txt
+src/tools/FILE_handler.py
+src/tools/IMAGE_handler.py
+src/tools/PALETTE_handler.py

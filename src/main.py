@@ -1,5 +1,5 @@
 import argparse
-from FILE_handler import *
+from tools.FILE_handler import *
 import os 
 from typing import Iterable
 from shutil import copyfile
@@ -14,7 +14,7 @@ def main():
     parser.add_argument('--extensions', type=str, nargs='+', required=False, help='The file extensions to process', default= ["css", "json", "html", "txt", 'svg'])
     parser.add_argument('--palette', type = Iterable, required=False, help='The palette to use for the file', default = None)
     parser.add_argument('--image', type = str, required=False, help='The path to image to use for the palette', default = None)
-    parser.add_help
+    
     if parser.parse_args().palette != None and parser.parse_args().palette_image != None : 
         raise ValueError("You cannot specify both a palette and a palette image")
     

@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 from typing import Iterable
 import re
 import numpy as np
-from PALETTE_handler import * 
+from tools.PALETTE_handler import * 
 
 def plot_colors(colors : Iterable, title = "", ax = False) : 
     if not ax : 
