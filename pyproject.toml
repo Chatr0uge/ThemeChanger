@@ -36,4 +36,4 @@ Repository = "https://github.com/me/spam.git"
 Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
 [project.scripts]
-theme-changer = "main:main"
+theme-changer = "cli.cli:main"

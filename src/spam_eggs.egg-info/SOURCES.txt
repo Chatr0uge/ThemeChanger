@@ -1,7 +1,7 @@
 README.md
 pyproject.toml
 setup.py
-src/main.py
+src/cli/cli.py
 src/spam_eggs.egg-info/PKG-INFO
 src/spam_eggs.egg-info/SOURCES.txt
 src/spam_eggs.egg-info/dependency_links.txt

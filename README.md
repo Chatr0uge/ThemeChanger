@@ -1,54 +1,62 @@
-[![Python version](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue.svg)](https://img.shields.io/badge/python-3.10-blue.svg)
-[![Documentation Status](https://readthedocs.org/projects/lussac/badge/?version=latest)](http://lussac.readthedocs.io/)
-[![Build status](https://github.com/BarbourLab/lussac/actions/workflows/unit-tests-linux.yml/badge.svg)](https://github.com/BarbourLab/lussac/actions/workflows/unit-tests.yml)
-[![Coverage report](https://codecov.io/gh/barbourlab/lussac/graphs/badge.svg)](https://app.codecov.io/github/barbourlab/lussac)
+# Color Palette Changer
 
-# Lussac 2.0
+Color Palette Changer is an automated and configurable tool for parsing files, analyzing color data, and replacing color palettes. It can use a given palette or create a palette from an image.
 
-:warning: Lussac 2.0 is in beta! :warning:
-
-You can use the version 1 with `git checkout v1`
-
-Lussac is an **automated** and **configurable** analysis pipeline for post-processing and/or merging multiple spike-sorting analyses. The goal is to improve the **yield** and **quality** of data from multielectrode extracellular recordings by comparing the outputs of different spike-sorting algorithms and/or multiple runs with different parameters. For more information, check out our [preprint](https://www.biorxiv.org/content/10.1101/2022.02.08.479192v1).
+Then the possibility for customizations infite and it's up to you to decide which directory you want to customize with your own color palette or from an image colors.
 
 ## Installation
 
-You can install the latest release version of Lussac:
+You can install the latest release version of Color Palette Changer:
 
 ```bash
-# OPTIONAL: Use a conda environment.
-conda create -n lussac python=3.11  # Must be >= 3.10
-conda activate lussac
-
-pip install lussac
-# pip install --upgrade lussac  # To upgrade in case a new version is released.
+pip install theme-changer
+# pip install --upgrade color-palette-changer  # To upgrade in case a new version is released.
 ```
 
-Or if you prefer downloading the latest developmental version:
+## Preview
+
+Here is a preview of what the Color Palette Changer can do:
+
+![Color Palette Changer Preview](path_to_image)
+
+## Usage
+
+You can run the script from the command line like this:
 
 ```bash
-# Download Lussac in any directory you want.
-git clone https://github.com/BarbourLab/lussac.git --branch dev
-cd lussac
-
-# OPTIONAL: Use a conda environment.
-conda create -n lussac python=3.11  # Must be >= 3.10
-conda activate lussac
-
-# Install Lussac.
-pip install -e .[dev]
-
-# To upgrade Lussac.
-git pull
-
-# If you want to check whether the installation was successful (optional)
-pytest
+python FILE_handler.py --dir_path /path/to/dir --replace_directory /path/to/replace/dir --extensions .txt .docx .pdf --path_image /path/to/image.jpg --replace True
 ```
 
-## Documentation
+Or this:
 
-You can find the documentation [here](https://lussac.readthedocs.io/).
+```bash
+python FILE_handler.py --dir_path /path/to/dir --replace_directory /path/to/replace/dir --extensions .txt .docx .pdf --palette #FFFFFF #000000 #FF0000 --replace False
+```
 
-## Migration from Lussac1
+## CLI parameter
 
-Lussac2 is not backwards-compatible with Lussac1. We advise you to make a new conda environment, and to remake your `params.json` file (which is also not backwards-compatible).
+The following parameter are avalaible for the cli :
+
+- -h, --help show this help message and exit
+
+- --path PATH The directory or file path to process
+
+- --replace_path REPLACE_PATH
+  The directory to replace
+
+- --extensions EXTENSIONS [EXTENSIONS ...]
+  The file extensions to process
+
+- --palette PALETTE The palette to use for the file
+
+- --image IMAGE The path to image to use for the palette
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+MIT

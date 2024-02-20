@@ -1,2 +1,2 @@
 [console_scripts]
-theme-changer = main:main
+theme-changer = cli.cli:main
