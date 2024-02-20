@@ -1,5 +1,7 @@
 # Color Palette Changer
 
+![Color Palette Changer Preview](https://raw.githubusercontent.com/Chatr0uge/ThemeChanger/main/image/cp.png)
+
 Color Palette Changer is an automated and configurable tool for parsing files, analyzing color data, and replacing color palettes. It can use a given palette or create a palette from an image.
 
 Then the possibility for customizations infite and it's up to you to decide which directory you want to customize with your own color palette or from an image colors.
